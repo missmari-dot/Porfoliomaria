@@ -7,9 +7,9 @@ const PortfolioConfig = {
         name: "Mariama Koulibaly",
         title: "Étudiante en Génie Logiciel",
         email: "mariama.koulibaly@email.com",
-        phone: "+221 XX XXX XX XX",
+        phone: "+221 77 484 93 07",
         location: "Sénégal",
-        linkedin: "https://www.linkedin.com/in/mariamakoulibaly/",
+        linkedin: "https://www.linkedin.com/in/mariama-koulibaly-892a83370/",
         github: "https://github.com/missmari-dot"
     },
     
