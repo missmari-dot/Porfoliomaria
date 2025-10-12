@@ -226,8 +226,8 @@ Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 
 **Mariama Koulibaly**
 - Email : mariama.koulibaly@email.com
-- LinkedIn : [Mouhamad DJIGO](https://www.linkedin.com/in/mouhamad-djigo-336906236/)
-- GitHub : [Djigo02](https://github.com/Djigo02)
+- LinkedIn : [Mariama Koulibaly](https://www.linkedin.com/in/mariama-koulibaly-892a83370/)
+- GitHub : [missmari-dot](https://github.com/missmari-dot)
 
 ---
 
