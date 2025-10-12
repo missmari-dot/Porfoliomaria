@@ -1,0 +1,106 @@
+{
+  "name": "mariama-koulibaly-portfolio",
+  "version": "2.0.0",
+  "description": "Portfolio moderne et responsive de Mariama Koulibaly - Étudiante en génie logiciel",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server -p 8000 -c-1",
+    "dev": "http-server -p 3000 -c-1 -o",
+    "build": "npm run minify-css && npm run minify-js",
+    "minify-css": "cleancss -o assets/css/style.min.css assets/css/style.css assets/css/custom.css",
+    "minify-js": "uglifyjs assets/js/config.js assets/js/script.js assets/js/typewritter.js -o assets/js/bundle.min.js",
+    "optimize-images": "imagemin assets/imgs/* --out-dir=assets/imgs/optimized",
+    "lint": "eslint assets/js/*.js",
+    "format": "prettier --write assets/js/*.js assets/css/*.css",
+    "test": "echo \"Tests à implémenter\" && exit 0",
+    "deploy": "gh-pages -d .",
+    "serve": "python -m http.server 8000"
+  },
+  "keywords": [
+    "portfolio",
+    "web-development",
+    "frontend",
+    "javascript",
+    "css",
+    "html",
+    "responsive",
+    "student",
+    "software-engineering"
+  ],
+  "author": {
+    "name": "Mariama Koulibaly",
+    "email": "mariama.koulibaly@email.com",
+    "url": "https://github.com/Djigo02"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Djigo02/portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Djigo02/portfolio/issues"
+  },
+  "homepage": "https://djigo02.github.io/portfolio",
+  "devDependencies": {
+    "clean-css-cli": "^5.6.2",
+    "eslint": "^8.50.0",
+    "gh-pages": "^6.0.0",
+    "http-server": "^14.1.1",
+    "imagemin": "^8.0.1",
+    "imagemin-cli": "^7.0.0",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "prettier": "^3.0.3",
+    "uglify-js": "^3.17.4"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "bootstrap": "^4.6.2",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.6.0",
+    "typewriter-effect": "^2.20.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11"
+  ],
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "config": {
+    "port": 8000,
+    "host": "localhost"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "es6": true,
+      "jquery": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 2020,
+      "sourceType": "module"
+    },
+    "rules": {
+      "no-console": "warn",
+      "no-unused-vars": "warn",
+      "semi": ["error", "always"],
+      "quotes": ["error", "single"]
+    }
+  },
+  "prettier": {
+    "semi": true,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "es5",
+    "printWidth": 80
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/sponsors/Djigo02"
+  }
+}
