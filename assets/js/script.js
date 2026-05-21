@@ -7,7 +7,7 @@ const TabProject = [
         alt: 'Système de gestion de commandes',
         title: 'Isi Burger',
         desc: 'Site de gestion des commandes pour restaurant avec interface utilisateur intuitive',
-        category: 'Web',
+        category: 'web',
         technologies: ['Laravel']
     },
      {
@@ -16,7 +16,7 @@ const TabProject = [
         alt: 'Système de gestion de commandes',
         title: 'Portail scolaire',
         desc: 'Site de gestion des services scolaire pour avec interface utilisateur intuitive',
-        category: 'Web',
+        category: 'web',
         technologies: ['Laravel+Angular']
     },
      {
@@ -25,7 +25,7 @@ const TabProject = [
         alt: 'Système de gestion de Stock de boisson',
         title: 'Coca-project',
         desc: 'Site de gestion de boissons coca ',
-        category: 'Web',
+        category: 'web',
         technologies: ['J2E']
     },
     {
@@ -34,20 +34,30 @@ const TabProject = [
         alt: 'Système de gestion de bibliotheque',
         title: 'Gestion bibliotheque',
         desc: 'Site de gestion de livres pour biblioteque',
-        category: 'Web',
+        category: 'web',
         technologies: ['python']
+    },
+    {
+        link: 'https://github.com/missmari-dot/pharma-app',
+        img: 'assets/imgs/pharma.png',
+        alt: 'Application Pharmacie',
+        title: 'Pharma App',
+        desc: 'Application de réservation de médicaments et d’informations sur les pharmacies (ouvertes, fermées ou de garde)',
+        category: 'app',
+        technologies: ['Flutter']
+    },
+    {
+        link: 'https://github.com/missmari-dot/academieohada',
+        img: 'assets/imgs/ohada.png',
+        alt: 'Académie Rédaction OHADA',
+        title: 'Académie Rédaction OHADA',
+        desc: 'Plateforme web de rédaction de mémoires et d’accompagnement académique pour les étudiants de l’espace OHADA',
+        category: 'web',
+        technologies: ['Laravel']
     },
 ];
 
 $(document).ready(function() {
-    // Initialize AOS (Animate On Scroll)
-    if (typeof AOS !== 'undefined') {
-        AOS.init({
-            duration: 1000,
-            once: true
-        });
-    }
-
     // Smooth scroll for navbar links
     $(".navbar .nav-link").on('click', function(event) {
         if (this.hash !== "") {
@@ -93,6 +103,15 @@ $(document).ready(function() {
     // Generate projects
     generateProjects();
 
+    // Initialize and refresh AOS after generating projects
+    if (typeof AOS !== 'undefined') {
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+        AOS.refresh();
+    }
+
     // Contact form validation and submission
     $('.contact-form').on('submit', function(e) {
         if (!validateForm()) {
@@ -130,7 +149,7 @@ function generateProjects() {
             <div class="col-md-6 col-lg-4 mb-4 project-item" data-category="${element.category.toLowerCase()}" data-aos="fade-up" data-aos-delay="${index * 100}">
                 <div class="portfolio-card">
                     <div class="portfolio-img-wrapper">
-                        <img src="${element.img}" class="portfolio-card-img" alt="${element.alt}" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 300 200\'%3E%3Crect width=\'300\' height=\'200\' fill=\'%23f8f9fa\'/%3E%3Ctext x=\'150\' y=\'100\' text-anchor=\'middle\' font-size=\'20\' fill=\'%23695aa6\'%3E${element.title}%3C/text%3E%3C/svg%3E'">
+                        <img src="${element.img}" class="portfolio-card-img" alt="${element.alt}" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 300 200%22%3E%3Crect width=%22300%22 height=%22200%22 fill=%22%23f8f9fa%22/%3E%3Ctext x=%22150%22 y=%22100%22 text-anchor=%22middle%22 font-size=%2220%22 fill=%22%23695aa6%22%3E${element.title}%3C/text%3E%3C/svg%3E'">
                         <div class="portfolio-overlay">
                             <div class="portfolio-actions">
                                 <a href="${element.link}" target="_blank" class="portfolio-btn" title="Voir le projet">
