@@ -55,6 +55,15 @@ const TabProject = [
         category: 'web',
         technologies: ['Laravel']
     },
+    {
+        link: 'https://github.com/missmari-dot/Data_Cleaning',
+        img: 'assets/imgs/data.png',
+        alt: 'Nettoyage de données',
+        title: 'Data Cleaning',
+        desc: 'Plateforme de prétraitements des données avant leur utilisation (Valeurs manquantes, abberantes, outliers',
+        category: 'web',
+        technologies: ['Python']
+    },
 ];
 
 $(document).ready(function() {
