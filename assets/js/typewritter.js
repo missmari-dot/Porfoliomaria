@@ -41,7 +41,7 @@ function initTypewriter() {
         .typeString('<span class="name">Je m\'appelle <strong>Mariama Koulibaly</strong></span>')
         .pauseFor(2000)
         .deleteAll()
-        .typeString('<span class="title">Étudiante en <em>Master 1 en Data science et IA</em></span>')
+        .typeString('<span class="title">Étudiante en <em>Master 2 en Data science et IA</em></span>')
         .pauseFor(2000)
         .deleteAll()
         .typeString('<span class="passion">Passionnée par le <span style="color: #ff6d02;">Développement et la Tech</span></span>')
@@ -60,7 +60,7 @@ function fallbackTextAnimation() {
     const texts = [
         'Salut ! 👋',
         'Je m\'appelle Mariama Koulibaly',
-        'Étudiante en Master 1 en Data science et IA',
+        'Étudiante en Master 2 en Data science et IA',
         'Passionnée par le Développement ',
         'Bienvenue sur mon Portfolio ! ✨'
     ];
